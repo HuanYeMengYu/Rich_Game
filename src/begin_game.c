@@ -1,9 +1,19 @@
 # include "utils.h"
 
+extern Player QianFuren;
+extern Player ATubo;
+extern Player SunXiaomei;
+extern Player JinBeibei;
+extern Map map;
+
 void begin_game(){
     printf("设置玩家初始资金,范围1000-50000(默认10000)或者输入回车跳过:");
     int init_money = 0;
     scanf("%d", &init_money);
+
+    if(init_money=='\n'){
+        init_money = 1000;
+    }
 
     init_all_players(init_money);
 

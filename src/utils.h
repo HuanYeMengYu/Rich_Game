@@ -154,17 +154,11 @@ typedef struct Map{
     Cell cells[CELL_NUMS];
 } Map;
 
-// players (global)
-Player QianFuren;
-Player ATubo;
-Player SunXiaomei;
-Player JinBeibei;
-
 int get_step_count();
 void init_player(Player player, int number, int init_money);
 void init_all_players(int init_money);
 void destroy_player(Player player);
-void init_map(Map map);
+void init_map(Map *map);
 void display_map(Map map);
 void tool_hosue(Player player);
 void gift_hosue(Player player);

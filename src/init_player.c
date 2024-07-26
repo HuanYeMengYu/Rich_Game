@@ -1,5 +1,11 @@
 # include "utils.h"
 
+extern Player QianFuren;
+extern Player ATubo;
+extern Player SunXiaomei;
+extern Player JinBeibei;
+extern Map map;
+
 void init_player(Player player, int number, int init_money){
     switch (number)
     {
