@@ -15,31 +15,29 @@ void tool_hosue(Player player){
         }
 
         ch = getchar();
-        
-        // press f/F to exit tool house
-        if (ch == TOOL_HOUSE_EXIT_1 || ch == TOOL_HOUSE_EXIT_2) {
+        switch (ch)
+        {
+        case TOOL_HOUSE_EXIT_1:
+            return;
             break;
-        }
-
-        // press 1 to buy a block
-        if(ch == BUY_BLOCK_PRESS_KEY){
+        case TOOL_HOUSE_EXIT_2:
+            return;
+            break;
+        case BUY_BLOCK_PRESS_KEY:
             printf("成功购买路障\n");
             player.block++;
-            continue;
-        }
-        // press 2 to buy a robot
-        if(ch == BUY_ROBOT_PRESS_KEY){
+            break;
+        case BUY_ROBOT_PRESS_KEY:
             printf("成功购买机器娃娃\n");
             player.robot++;
-            continue;
-        }
-        // press 3 to buy a bomb
-        if(ch == BUY_BOMB_PRESS_KEY){
+            break;
+        case BUY_BOMB_PRESS_KEY:
             printf("成功购买炸弹\n");
             player.bomb++;
-            continue;
+            break;
+        default:
+            printf("输入无效，请重新输入\n");
+            break;
         }
-        
-        printf("输入无效，请重新输入\n");
     }
 }

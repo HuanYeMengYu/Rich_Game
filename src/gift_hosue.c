@@ -9,17 +9,17 @@ void gift_hosue(Player player){
         return;
     }
     switch (gift_number){
-        case BONUS_NUMBER:
-            printf("您获得2000元奖金！\n");
-            player.money += 2000;
-            break;
-        case POINT_CARD:
-            printf("您获得200点的点数卡！\n");
-            player.point += 200;
-            break;
-        case GOD_OF_WEALTH:
-            printf("您获得财神buff！5轮内有效\n");
-            player.buff = true;
-            break;
+    case BONUS_NUMBER:
+        printf("您获得2000元奖金！\n");
+        player.money += 2000;
+        break;
+    case POINT_CARD:
+        printf("您获得200点的点数卡！\n");
+        player.point += 200;
+        break;
+    case GOD_OF_WEALTH:
+        printf("您获得财神buff！5轮内有效\n");
+        player.buff = true;
+        break;
     }
 }
