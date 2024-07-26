@@ -116,19 +116,20 @@
 
 typedef struct Player{
     int number;
-    bool alive;
+    int alive;
     int money;
     int point;
     int block;
     int bomb;
     int robot;
-    bool buff;
+    int buff;
     int _continue;
-    bool prison;
-    bool hospital;
+    int prison;
+    int hospital;
     int de_continue;
     int position;
-    int** property;
+    int** properties;
+    int property_count;
 } Player;
 
 typedef struct Cell{
@@ -143,6 +144,7 @@ typedef struct Map{
 } Map;
 
 void init_player(Player player, int number, int init_money);
+void destroy_player(Player player);
 void init_map(Map map);
 void display_map(Map map);
 void tool_hosue(Player player);
