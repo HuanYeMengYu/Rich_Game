@@ -1,5 +1,45 @@
 # include "utils.h"
 
-tool_hosue(){
+void tool_hosue(Player player){
+    if(player.point < MIN_POINT){
+        printf("玩家点数不足以买点数最少的道具，自动退出道具屋\n");
+        return;
+    }
 
+    char ch;
+    while (1) {
+        // if player has more than 10 tools , exit
+        if((player.block + player.bomb + player.robot) > TOOL_MAX_NUMS){
+            printf("玩家已经拥有%d个道具，自动退出道具屋\n", TOOL_MAX_NUMS);
+            return;
+        }
+
+        ch = getchar();
+        
+        // press f/F to exit tool house
+        if (ch == TOOL_HOUSE_EXIT_1 || ch == TOOL_HOUSE_EXIT_2) {
+            break;
+        }
+
+        // press 1 to buy a block
+        if(ch == BUY_BLOCK_PRESS_KEY){
+            printf("成功购买路障\n");
+            player.block++;
+            continue;
+        }
+        // press 2 to buy a robot
+        if(ch == BUY_ROBOT_PRESS_KEY){
+            printf("成功购买机器娃娃\n");
+            player.robot++;
+            continue;
+        }
+        // press 3 to buy a bomb
+        if(ch == BUY_BOMB_PRESS_KEY){
+            printf("成功购买炸弹\n");
+            player.bomb++;
+            continue;
+        }
+        
+        printf("输入无效，请重新输入\n");
+    }
 }
