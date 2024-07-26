@@ -26,7 +26,7 @@ void init_map(Map map){
     map.cells[MAGIC_HOUSE_POSITION].kind = MAGIC_HOUSE;
 
     // init blank places of rank1
-    for(int i=1;i<=27;i++){
+    for(int i=RANK1_START_POSITION;i<=RANK1_END_POSITION;i++){
         if(i==HOSPITAL_POSITION)
             continue;
         map.cells[i].show_char = BLANK_SPACE_SHOW_CHAR;
@@ -37,7 +37,7 @@ void init_map(Map map){
     }
 
     // init blank places of rank2
-    for(int i=29;i<=34;i++){
+    for(int i=RANK2_START_POSITION;i<=RANK2_END_POSITION;i++){
         map.cells[i].show_char = BLANK_SPACE_SHOW_CHAR;
         map.cells[i].kind = BLANK_SPACE;
         map.cells[i].rank = RANK2;
@@ -46,7 +46,7 @@ void init_map(Map map){
     }
 
     // init blank places of rank3
-    for(int i=36;i<=62;i++){
+    for(int i=RANK3_START_POSITION;i<=RANK3_END_POSITION;i++){
         if(i==PRISON_POSITION)
             continue;
         map.cells[i].show_char = BLANK_SPACE_SHOW_CHAR;

@@ -1,6 +1,7 @@
 # ifndef UTILS_H
 # define UTILS_H
 
+# include <stdio.h>
 # include <stdbool.h>
 
 // Map's size
@@ -21,6 +22,18 @@
 # define GIFT_HOUSE_POSITION 35
 // magic house position
 # define MAGIC_HOUSE_POSITION 63
+// rank1 start position
+# define RANK1_START_POSITION 1
+// rank1 end position
+# define RANK1_END_POSITION 27
+// rank2 start position
+# define RANK2_START_POSITION 29
+// rank2 end position
+# define RANK2_END_POSITION 34
+// rank3 start position
+# define RANK3_START_POSITION 36
+// rank3 end position
+# define RANK3_END_POSITION 62
 
 // gold space pisition
 # define GOLD_SPACE_1_POSITION 64
@@ -128,5 +141,14 @@ typedef struct Cell{
 typedef struct Map{
     Cell cells[CELL_NUMS];
 } Map;
+
+void init_map(Map map);
+void display_map(Map map);
+void tool_hosue(Player player);
+void gift_hosue(Player player);
+void magic_hosue(Player player);
+void goto_hospital(Player player);
+void goto_prison(Player player);
+void get_gold(Player player, int gold_space_position);
 
 # endif
