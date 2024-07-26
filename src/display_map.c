@@ -1,7 +1,7 @@
 # include "utils.h"
 
 void display_map(Map map){
-    printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", 
+    printf("%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s\n", 
         map.cells[0].show_char,
         map.cells[1].show_char,
         map.cells[2].show_char,
@@ -32,13 +32,13 @@ void display_map(Map map){
         map.cells[27].show_char,
         map.cells[28].show_char
     );
-    printf("%c                           %c\n", map.cells[69].show_char, map.cells[29].show_char);
-    printf("%c                           %c\n", map.cells[68].show_char, map.cells[30].show_char);
-    printf("%c                           %c\n", map.cells[67].show_char, map.cells[31].show_char);
-    printf("%c                           %c\n", map.cells[66].show_char, map.cells[32].show_char);
-    printf("%c                           %c\n", map.cells[65].show_char, map.cells[33].show_char);
-    printf("%c                           %c\n", map.cells[64].show_char, map.cells[34].show_char);
-    printf("%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c%c\n", 
+    printf("%s                           %s\n", map.cells[69].show_char, map.cells[29].show_char);
+    printf("%s                           %s\n", map.cells[68].show_char, map.cells[30].show_char);
+    printf("%s                           %s\n", map.cells[67].show_char, map.cells[31].show_char);
+    printf("%s                           %s\n", map.cells[66].show_char, map.cells[32].show_char);
+    printf("%s                           %s\n", map.cells[65].show_char, map.cells[33].show_char);
+    printf("%s                           %s\n", map.cells[64].show_char, map.cells[34].show_char);
+    printf("%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s%s\n", 
         map.cells[63].show_char,
         map.cells[62].show_char,
         map.cells[61].show_char,

@@ -12,7 +12,7 @@ void begin_game(){
     scanf("%d", &init_money);
 
     if(init_money=='\n'){
-        init_money = 1000;
+        init_money = INIT_MONEY;
     }
 
     init_all_players(init_money);
