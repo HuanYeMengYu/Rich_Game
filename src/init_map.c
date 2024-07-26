@@ -33,7 +33,6 @@ void init_map(Map map){
         map.cells[i].kind = BLANK_SPACE;
         map.cells[i].rank = RANK1;
         map.cells[i].has_tool = false;
-        map.cells[i].owner = 'N';
     }
 
     // init blank places of rank2
@@ -42,7 +41,6 @@ void init_map(Map map){
         map.cells[i].kind = BLANK_SPACE;
         map.cells[i].rank = RANK2;
         map.cells[i].has_tool = false;
-        map.cells[i].owner = 'N';
     }
 
     // init blank places of rank3
@@ -53,7 +51,6 @@ void init_map(Map map){
         map.cells[i].kind = BLANK_SPACE;
         map.cells[i].rank = RANK3;
         map.cells[i].has_tool = false;
-        map.cells[i].owner = 'N';
     }
 
     // init gold space

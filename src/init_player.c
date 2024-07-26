@@ -17,6 +17,7 @@ void init_player(Player player, int number, int init_money){
         player.hospital = false;
         player.de_continue = 0;
         player.position = 0;
+        
         break;
     case 2:
         player.number = 2;
@@ -32,6 +33,7 @@ void init_player(Player player, int number, int init_money){
         player.hospital = false;
         player.de_continue = 0;
         player.position = 0;
+
         break;
     case 3:
         player.number = 3;
@@ -62,6 +64,7 @@ void init_player(Player player, int number, int init_money){
         player.hospital = false;
         player.de_continue = 0;
         player.position = 0;
+
         break;
     default:
         break;

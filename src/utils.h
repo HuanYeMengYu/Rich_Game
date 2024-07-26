@@ -128,6 +128,7 @@ typedef struct Player{
     bool hospital;
     int de_continue;
     int position;
+    int** property;
 } Player;
 
 typedef struct Cell{
@@ -135,13 +136,13 @@ typedef struct Cell{
     int kind;
     int rank;
     int has_tool;
-    char owner;     // owner = 'N' , means owner is None
 } Cell;
 
 typedef struct Map{
     Cell cells[CELL_NUMS];
 } Map;
 
+void init_player(Player player, int number, int init_money);
 void init_map(Map map);
 void display_map(Map map);
 void tool_hosue(Player player);
