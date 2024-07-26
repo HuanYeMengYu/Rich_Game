@@ -1,7 +1,7 @@
 # include "utils.h"
 
 void tool_hosue(Player player){
-    if(player.point < MIN_POINT){
+    if(player.point < MIN_TOOL_POINT){
         printf("玩家点数不足以买点数最少的道具，自动退出道具屋\n");
         return;
     }
@@ -17,10 +17,10 @@ void tool_hosue(Player player){
         ch = getchar();
         switch (ch)
         {
-        case TOOL_HOUSE_EXIT_1:
+        case TOOL_HOUSE_EXIT_PRESS_KEY_1:
             return;
             break;
-        case TOOL_HOUSE_EXIT_2:
+        case TOOL_HOUSE_EXIT_PRESS_KEY_2:
             return;
             break;
         case BUY_BLOCK_PRESS_KEY:

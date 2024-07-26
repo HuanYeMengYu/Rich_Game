@@ -9,10 +9,18 @@
 // the maximum number of tools a player can have
 # define TOOL_MAX_NUMS 10
 
+// start position
+# define START_POSITION 0
 // prison position
 # define PRISON_POSITION 49
 // hospital position
 # define HOSPITAL_POSITION 14
+// tool house position
+# define TOOL_HOUSE_POSITION 28
+// gift house position
+# define GIFT_HOUSE_POSITION 35
+// magic house position
+# define MAGIC_HOUSE_POSITION 63
 
 // gold space pisition
 # define GOLD_SPACE_1_POSITION 64
@@ -36,7 +44,7 @@
 # define ROBOT_POINT 30
 // the lowest points
 #define MIN(a, b) ((a) < (b) ? (a) : (b))
-#define MIN_POINT MIN(MIN(BLOCK_POINT, BOMB_POINT), ROBOT_POINT)
+#define MIN_TOOL_POINT MIN(MIN(BLOCK_POINT, BOMB_POINT), ROBOT_POINT)
 
 // players' show_char
 # define QIANFUREN 'Q'
@@ -72,8 +80,26 @@
 # define BUY_BOMB_PRESS_KEY '3'
 
 // the press key to exit tool house
-# define TOOL_HOUSE_EXIT_1 'F'
-# define TOOL_HOUSE_EXIT_2 'f'
+# define TOOL_HOUSE_EXIT_PRESS_KEY_1 'F'
+# define TOOL_HOUSE_EXIT_PRESS_KEY_2 'f'
+
+// define building kind
+# define START -1
+# define BLANK_SPACE 0
+# define HOUSE_1 1
+# define HOUSE_2 2
+# define HOUSE_3 3
+# define TOOL_HOUSE 4
+# define GIFT_HOUSE 5
+# define MAGIC_HOUSE 6
+# define PRISON 7
+# define HOSPITAL 8
+# define GOLD_SPACE 9
+
+// rank of space
+# define RANK1 1
+# define RANK2 2
+# define RANK3 3
 
 typedef struct Player{
     int number;
@@ -96,7 +122,7 @@ typedef struct Cell{
     int kind;
     int rank;
     int has_tool;
-    int owner;
+    char owner;     // owner = 'N' , means owner is None
 } Cell;
 
 typedef struct Map{
