@@ -3,8 +3,8 @@
 void init_player(Player player, int number, int init_money){
     switch (number)
     {
-    case 1:
-        player.number = 1;
+    case QIANFUREN_NUMBER:
+        player.number = QIANFUREN_NUMBER;
         player.alive = 0;
         player.money = init_money;
         player.point = 0;
@@ -20,7 +20,7 @@ void init_player(Player player, int number, int init_money){
         player.properties = NULL;
         player.property_count = 0;
         break;
-    case 2:
+    case ATUBO_NUMBER:
         player.number = 2;
         player.alive = 0;
         player.money = init_money;
@@ -37,7 +37,7 @@ void init_player(Player player, int number, int init_money){
         player.properties = NULL;
         player.property_count = 0;
         break;
-    case 3:
+    case SUNXIAOMEI_NUMBER:
         player.number = 3;
         player.alive = 0;
         player.money = init_money;
@@ -54,7 +54,7 @@ void init_player(Player player, int number, int init_money){
         player.properties = NULL;
         player.property_count = 0;
         break;
-    case 4:
+    case JINBEIBEI_NUMBER:
         player.number = 4;
         player.alive = 0;
         player.money = init_money;

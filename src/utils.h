@@ -2,10 +2,21 @@
 # define UTILS_H
 
 # include <stdio.h>
+# include <stdlib.h>
 # include <stdbool.h>
+# include <time.h>
+
+// player num
+# define TOTAL_PLAYER_NUM 4
 
 // Map's size
 # define CELL_NUMS 70
+
+// players' number
+# define QIANFUREN_NUMBER 1
+# define ATUBO_NUMBER 2
+# define SUNXIAOMEI_NUMBER 3
+# define JINBEIBEI_NUMBER 4
 
 // the maximum number of tools a player can have
 # define TOOL_MAX_NUMS 10
@@ -143,7 +154,15 @@ typedef struct Map{
     Cell cells[CELL_NUMS];
 } Map;
 
+// players (global)
+Player QianFuren;
+Player ATubo;
+Player SunXiaomei;
+Player JinBeibei;
+
+int get_step_count();
 void init_player(Player player, int number, int init_money);
+void init_all_players(int init_money);
 void destroy_player(Player player);
 void init_map(Map map);
 void display_map(Map map);
