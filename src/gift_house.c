@@ -1,6 +1,6 @@
 # include "utils.h"
 
-void gift_hosue(Player *player){
+void gift_house(Player *player){
     printf("欢迎光临礼品物，请选择一件您喜欢的礼品:\n");
     int gift_number = 0;
     scanf("%d", &gift_number);

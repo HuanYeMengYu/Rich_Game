@@ -13,7 +13,10 @@
 // Map's size
 # define CELL_NUMS 70
 
+# define INIT_MONEY 1000
+
 // players' number
+# define NO_ONE 0
 # define QIANFUREN_NUMBER 1
 # define ATUBO_NUMBER 2
 # define SUNXIAOMEI_NUMBER 3
@@ -78,21 +81,21 @@
 # define JINBEIBEI 'J'
 
 // cells' show_char
-# define START_SHOW_CHAR 'S'
-# define BLANK_SPACE_SHOW_CHAR '0'
-# define HOUSE_1_SHOW_CHAR '1'
-# define HOUSE_2_SHOW_CHAR '2'
-# define HOUSE_3_SHOW_CHAR '3'
-# define GOLD_SPACE_SHOW_CHAR '$'
-# define HOSPITAL_SHOW_CHAR 'H'
-# define PRISON_SHOW_CHAR 'P'
-# define TOOL_HOUSE_SHOW_CHAR 'T'
-# define GIFT_HOUSE_SHOW_CHAR 'G'
-# define MAGIC_HOUSE_SHOW_CHAR 'M'
+# define START_SHOW_CHAR "S"
+# define BLANK_SPACE_SHOW_CHAR "0"
+# define HOUSE_1_SHOW_CHAR "1"
+# define HOUSE_2_SHOW_CHAR "2"
+# define HOUSE_3_SHOW_CHAR "3"
+# define GOLD_SPACE_SHOW_CHAR "$"
+# define HOSPITAL_SHOW_CHAR "H"
+# define PRISON_SHOW_CHAR "P"
+# define TOOL_HOUSE_SHOW_CHAR "T"
+# define GIFT_HOUSE_SHOW_CHAR "G"
+# define MAGIC_HOUSE_SHOW_CHAR "M"
 
 // tool's show_char
-# define BLOCK '#'
-# define BOMB '@'
+# define BLOCK "#"
+# define BOMB "@"
 
 // gifts' number
 # define BONUS_NUMBER 1
@@ -145,10 +148,11 @@ typedef struct Player{
 } Player;
 
 typedef struct Cell{
-    char show_char;
+    char show_char[7];
     int kind;
     int rank;
     int has_tool;
+    int owner;
 } Cell;
 
 typedef struct Map{
