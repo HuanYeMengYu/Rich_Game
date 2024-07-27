@@ -5,6 +5,7 @@
 # include <stdlib.h>
 # include <stdbool.h>
 # include <time.h>
+# include <string.h>
 
 // player num
 # define TOTAL_PLAYER_NUM 4
@@ -155,16 +156,27 @@ typedef struct Map{
 } Map;
 
 int get_step_count();
-void init_player(Player player, int number, int init_money);
+void init_player(Player *player, int number, int init_money);
 void init_all_players(int init_money);
-void destroy_player(Player player);
+void destroy_player(Player *player);
 void init_map(Map *map);
-void display_map(Map map);
-void tool_hosue(Player player);
-void gift_hosue(Player player);
-void magic_hosue(Player player);
-void goto_hospital(Player player);
-void goto_prison(Player player);
-void get_gold(Player player, int gold_space_position);
+void display_map(Map *map);
+void tool_hosue(Player *player);
+void gift_hosue(Player *player);
+void magic_hosue(Player *player);
+void goto_hospital(Player *player);
+void goto_prison(Player *player);
+void get_gold(Player *player, int gold_space_position);
+void Get_instruction(char* keyboard_input);
+void Print_Help();
 
+Player QianFuren;
+Player ATubo;
+Player SunXiaomei;
+Player JinBeibei;
+
+Map* map;
+char users[5];
+char now_user[2];
+Player *use_players;
 # endif
