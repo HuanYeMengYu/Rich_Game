@@ -6,6 +6,7 @@
 # include <stdbool.h>
 # include <time.h>
 # include <string.h>
+# include <string.h>
 
 // player num
 # define TOTAL_PLAYER_NUM 4
@@ -183,6 +184,7 @@ void goto_prison(Player *player);
 void get_gold(Player *player, int gold_space_position);
 void Get_instruction(char* keyboard_input);
 void Print_Help();
+void Show_Assets(Player player);
 
 Player QianFuren;
 Player ATubo;
