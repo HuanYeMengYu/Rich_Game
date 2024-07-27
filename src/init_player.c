@@ -23,7 +23,7 @@ void init_player(Player *player, int number, int init_money){
         player->hospital = 0;
         player->de_continue = 0;
         player->position = 0;
-        player->properties = NULL;
+        // player->properties = NULL;
         player->property_count = 0;
         break;
     case ATUBO_NUMBER:
@@ -40,7 +40,7 @@ void init_player(Player *player, int number, int init_money){
         player->hospital = 0;
         player->de_continue = 0;
         player->position = 0;
-        player->properties = NULL;
+        // player->properties = NULL;
         player->property_count = 0;
         break;
     case SUNXIAOMEI_NUMBER:
@@ -57,7 +57,7 @@ void init_player(Player *player, int number, int init_money){
         player->hospital = 0;
         player->de_continue = 0;
         player->position = 0;
-        player->properties = NULL;
+        // player->properties = NULL;
         player->property_count = 0;
         break;
     case JINBEIBEI_NUMBER:
@@ -74,7 +74,7 @@ void init_player(Player *player, int number, int init_money){
         player->hospital = 0;
         player->de_continue = 0;
         player->position = 0;
-        player->properties = NULL;
+        // player->properties = NULL;
         player->property_count = 0;
         break;
     default:

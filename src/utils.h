@@ -129,6 +129,16 @@
 # define RANK2 2
 # define RANK3 3
 
+//不同RANK价格的宏定义
+#define RANK1_PRICE 200
+#define RANK2_PRICE 500
+#define RANK3_PRICE 300
+//不同PROPERTY的宏定义
+#define PROPERTY_BLANK 0
+#define PROPERTY_HOUSE_1 1
+#define PROPERTY_HOUSE_2 2
+#define PROPERTY_HOUSE_3 3
+
 typedef struct Player{
     int number;
     int alive;
@@ -143,12 +153,12 @@ typedef struct Player{
     int hospital;
     int de_continue;
     int position;
-    int** properties;
+    int properties[70];
     int property_count;
 } Player;
 
 typedef struct Cell{
-    char show_char[7];
+    char show_char;
     int kind;
     int rank;
     int has_tool;
