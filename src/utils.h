@@ -6,6 +6,7 @@
 # include <stdbool.h>
 # include <time.h>
 # include <string.h>
+# include <string.h>
 
 // player num
 # define TOTAL_PLAYER_NUM 4
@@ -13,7 +14,10 @@
 // Map's size
 # define CELL_NUMS 70
 
+# define INIT_MONEY 1000
+
 // players' number
+# define NO_ONE 0
 # define QIANFUREN_NUMBER 1
 # define ATUBO_NUMBER 2
 # define SUNXIAOMEI_NUMBER 3
@@ -78,21 +82,21 @@
 # define JINBEIBEI 'J'
 
 // cells' show_char
-# define START_SHOW_CHAR 'S'
-# define BLANK_SPACE_SHOW_CHAR '0'
-# define HOUSE_1_SHOW_CHAR '1'
-# define HOUSE_2_SHOW_CHAR '2'
-# define HOUSE_3_SHOW_CHAR '3'
-# define GOLD_SPACE_SHOW_CHAR '$'
-# define HOSPITAL_SHOW_CHAR 'H'
-# define PRISON_SHOW_CHAR 'P'
-# define TOOL_HOUSE_SHOW_CHAR 'T'
-# define GIFT_HOUSE_SHOW_CHAR 'G'
-# define MAGIC_HOUSE_SHOW_CHAR 'M'
+# define START_SHOW_CHAR "S"
+# define BLANK_SPACE_SHOW_CHAR "0"
+# define HOUSE_1_SHOW_CHAR "1"
+# define HOUSE_2_SHOW_CHAR "2"
+# define HOUSE_3_SHOW_CHAR "3"
+# define GOLD_SPACE_SHOW_CHAR "$"
+# define HOSPITAL_SHOW_CHAR "H"
+# define PRISON_SHOW_CHAR "P"
+# define TOOL_HOUSE_SHOW_CHAR "T"
+# define GIFT_HOUSE_SHOW_CHAR "G"
+# define MAGIC_HOUSE_SHOW_CHAR "M"
 
 // tool's show_char
-# define BLOCK '#'
-# define BOMB '@'
+# define BLOCK "#"
+# define BOMB "@"
 
 // gifts' number
 # define BONUS_NUMBER 1
@@ -145,10 +149,11 @@ typedef struct Player{
 } Player;
 
 typedef struct Cell{
-    char show_char;
+    char show_char[7];
     int kind;
     int rank;
     int has_tool;
+    int owner;
 } Cell;
 
 typedef struct Map{
@@ -156,18 +161,28 @@ typedef struct Map{
 } Map;
 
 int get_step_count();
-void init_player(Player player, int number, int init_money);
+void init_player(Player *player, int number, int init_money);
 void init_all_players(int init_money);
-void destroy_player(Player player);
+void destroy_player(Player *player);
 void init_map(Map *map);
-void display_map(Map map);
-void tool_hosue(Player player);
-void gift_hosue(Player player);
-void magic_hosue(Player player);
-void goto_hospital(Player player);
-void goto_prison(Player player);
-void get_gold(Player player, int gold_space_position);
+void display_map(Map *map);
+void tool_hosue(Player *player);
+void gift_hosue(Player *player);
+void magic_hosue(Player *player);
+void goto_hospital(Player *player);
+void goto_prison(Player *player);
+void get_gold(Player *player, int gold_space_position);
 void Get_instruction(char* keyboard_input);
 void Print_Help();
 void Show_Assets(Player player);
+
+Player QianFuren;
+Player ATubo;
+Player SunXiaomei;
+Player JinBeibei;
+
+Map* map;
+char users[5];
+char now_user[2];
+Player *use_players;
 # endif

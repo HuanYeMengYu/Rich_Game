@@ -1,6 +1,6 @@
 # include "utils.h"
 
-void gift_hosue(Player player){
+void gift_house(Player *player){
     printf("欢迎光临礼品物，请选择一件您喜欢的礼品:\n");
     int gift_number = 0;
     scanf("%d", &gift_number);
@@ -11,15 +11,15 @@ void gift_hosue(Player player){
     switch (gift_number){
     case BONUS_NUMBER:
         printf("您获得2000元奖金！\n");
-        player.money += 2000;
+        player->money += 2000;
         break;
     case POINT_CARD:
         printf("您获得200点的点数卡！\n");
-        player.point += 200;
+        player->point += 200;
         break;
     case GOD_OF_WEALTH:
         printf("您获得财神buff！5轮内有效\n");
-        player.buff = true;
+        player->buff = true;
         break;
     }
 }
