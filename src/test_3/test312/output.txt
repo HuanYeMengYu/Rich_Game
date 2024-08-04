@@ -1,0 +1,281 @@
+MAP:
+Tool positions and kinds:
+
+Users: 1234
+Current User: 2
+
+Players:
+Player 1:
+  Alive: 1
+  Money: 0
+  Point: 40
+  Number: 1
+  Tool1 (Block): 0
+  Tool2 (Bomb): 0
+  Tool3 (Robot): 0
+  Buff: 0
+  Continue: 0
+  Debuff0 (Prison): 0
+  Debuff1 (Hospital): 0
+  Decontinue: 0
+  Position: 66
+  Properties:
+
+Player 2:
+  Alive: 0
+  Money: 0
+  Point: 0
+  Number: 0
+  Tool1 (Block): 0
+  Tool2 (Bomb): 0
+  Tool3 (Robot): 0
+  Buff: 0
+  Continue: 0
+  Debuff0 (Prison): 0
+  Debuff1 (Hospital): 0
+  Decontinue: 0
+  Position: 0
+  Properties:
+    Property ID: 0, Value: 0
+    Property ID: 1, Value: 0
+    Property ID: 2, Value: 0
+    Property ID: 3, Value: 0
+    Property ID: 4, Value: 0
+    Property ID: 5, Value: 0
+    Property ID: 6, Value: 0
+    Property ID: 7, Value: 0
+    Property ID: 8, Value: 0
+    Property ID: 9, Value: 0
+    Property ID: 10, Value: 0
+    Property ID: 11, Value: 0
+    Property ID: 12, Value: 0
+    Property ID: 13, Value: 0
+    Property ID: 14, Value: 0
+    Property ID: 15, Value: 0
+    Property ID: 16, Value: 0
+    Property ID: 17, Value: 0
+    Property ID: 18, Value: 0
+    Property ID: 19, Value: 0
+    Property ID: 20, Value: 0
+    Property ID: 21, Value: 0
+    Property ID: 22, Value: 0
+    Property ID: 23, Value: 0
+    Property ID: 24, Value: 0
+    Property ID: 25, Value: 0
+    Property ID: 26, Value: 0
+    Property ID: 27, Value: 0
+    Property ID: 28, Value: 0
+    Property ID: 29, Value: 0
+    Property ID: 30, Value: 0
+    Property ID: 31, Value: 0
+    Property ID: 32, Value: 0
+    Property ID: 33, Value: 0
+    Property ID: 34, Value: 0
+    Property ID: 35, Value: 0
+    Property ID: 36, Value: 0
+    Property ID: 37, Value: 0
+    Property ID: 38, Value: 0
+    Property ID: 39, Value: 0
+    Property ID: 40, Value: 0
+    Property ID: 41, Value: 0
+    Property ID: 42, Value: 0
+    Property ID: 43, Value: 0
+    Property ID: 44, Value: 0
+    Property ID: 45, Value: 0
+    Property ID: 46, Value: 0
+    Property ID: 47, Value: 0
+    Property ID: 48, Value: 0
+    Property ID: 49, Value: 0
+    Property ID: 50, Value: 0
+    Property ID: 51, Value: 0
+    Property ID: 52, Value: 0
+    Property ID: 53, Value: 0
+    Property ID: 54, Value: 0
+    Property ID: 55, Value: 0
+    Property ID: 56, Value: 0
+    Property ID: 57, Value: 0
+    Property ID: 58, Value: 0
+    Property ID: 59, Value: 0
+    Property ID: 60, Value: 0
+    Property ID: 61, Value: 0
+    Property ID: 62, Value: 0
+    Property ID: 63, Value: 0
+    Property ID: 64, Value: 0
+    Property ID: 65, Value: 0
+    Property ID: 66, Value: 0
+    Property ID: 67, Value: 0
+    Property ID: 68, Value: 0
+    Property ID: 69, Value: 0
+
+Player 3:
+  Alive: 0
+  Money: 0
+  Point: 0
+  Number: 0
+  Tool1 (Block): 0
+  Tool2 (Bomb): 0
+  Tool3 (Robot): 0
+  Buff: 0
+  Continue: 0
+  Debuff0 (Prison): 0
+  Debuff1 (Hospital): 0
+  Decontinue: 0
+  Position: 0
+  Properties:
+    Property ID: 0, Value: 0
+    Property ID: 1, Value: 0
+    Property ID: 2, Value: 0
+    Property ID: 3, Value: 0
+    Property ID: 4, Value: 0
+    Property ID: 5, Value: 0
+    Property ID: 6, Value: 0
+    Property ID: 7, Value: 0
+    Property ID: 8, Value: 0
+    Property ID: 9, Value: 0
+    Property ID: 10, Value: 0
+    Property ID: 11, Value: 0
+    Property ID: 12, Value: 0
+    Property ID: 13, Value: 0
+    Property ID: 14, Value: 0
+    Property ID: 15, Value: 0
+    Property ID: 16, Value: 0
+    Property ID: 17, Value: 0
+    Property ID: 18, Value: 0
+    Property ID: 19, Value: 0
+    Property ID: 20, Value: 0
+    Property ID: 21, Value: 0
+    Property ID: 22, Value: 0
+    Property ID: 23, Value: 0
+    Property ID: 24, Value: 0
+    Property ID: 25, Value: 0
+    Property ID: 26, Value: 0
+    Property ID: 27, Value: 0
+    Property ID: 28, Value: 0
+    Property ID: 29, Value: 0
+    Property ID: 30, Value: 0
+    Property ID: 31, Value: 0
+    Property ID: 32, Value: 0
+    Property ID: 33, Value: 0
+    Property ID: 34, Value: 0
+    Property ID: 35, Value: 0
+    Property ID: 36, Value: 0
+    Property ID: 37, Value: 0
+    Property ID: 38, Value: 0
+    Property ID: 39, Value: 0
+    Property ID: 40, Value: 0
+    Property ID: 41, Value: 0
+    Property ID: 42, Value: 0
+    Property ID: 43, Value: 0
+    Property ID: 44, Value: 0
+    Property ID: 45, Value: 0
+    Property ID: 46, Value: 0
+    Property ID: 47, Value: 0
+    Property ID: 48, Value: 0
+    Property ID: 49, Value: 0
+    Property ID: 50, Value: 0
+    Property ID: 51, Value: 0
+    Property ID: 52, Value: 0
+    Property ID: 53, Value: 0
+    Property ID: 54, Value: 0
+    Property ID: 55, Value: 0
+    Property ID: 56, Value: 0
+    Property ID: 57, Value: 0
+    Property ID: 58, Value: 0
+    Property ID: 59, Value: 0
+    Property ID: 60, Value: 0
+    Property ID: 61, Value: 0
+    Property ID: 62, Value: 0
+    Property ID: 63, Value: 0
+    Property ID: 64, Value: 0
+    Property ID: 65, Value: 0
+    Property ID: 66, Value: 0
+    Property ID: 67, Value: 0
+    Property ID: 68, Value: 0
+    Property ID: 69, Value: 0
+
+Player 4:
+  Alive: 0
+  Money: 0
+  Point: 0
+  Number: 0
+  Tool1 (Block): 0
+  Tool2 (Bomb): 0
+  Tool3 (Robot): 0
+  Buff: 0
+  Continue: 0
+  Debuff0 (Prison): 0
+  Debuff1 (Hospital): 0
+  Decontinue: 0
+  Position: 0
+  Properties:
+    Property ID: 0, Value: 0
+    Property ID: 1, Value: 0
+    Property ID: 2, Value: 0
+    Property ID: 3, Value: 0
+    Property ID: 4, Value: 0
+    Property ID: 5, Value: 0
+    Property ID: 6, Value: 0
+    Property ID: 7, Value: 0
+    Property ID: 8, Value: 0
+    Property ID: 9, Value: 0
+    Property ID: 10, Value: 0
+    Property ID: 11, Value: 0
+    Property ID: 12, Value: 0
+    Property ID: 13, Value: 0
+    Property ID: 14, Value: 0
+    Property ID: 15, Value: 0
+    Property ID: 16, Value: 0
+    Property ID: 17, Value: 0
+    Property ID: 18, Value: 0
+    Property ID: 19, Value: 0
+    Property ID: 20, Value: 0
+    Property ID: 21, Value: 0
+    Property ID: 22, Value: 0
+    Property ID: 23, Value: 0
+    Property ID: 24, Value: 0
+    Property ID: 25, Value: 0
+    Property ID: 26, Value: 0
+    Property ID: 27, Value: 0
+    Property ID: 28, Value: 0
+    Property ID: 29, Value: 0
+    Property ID: 30, Value: 0
+    Property ID: 31, Value: 0
+    Property ID: 32, Value: 0
+    Property ID: 33, Value: 0
+    Property ID: 34, Value: 0
+    Property ID: 35, Value: 0
+    Property ID: 36, Value: 0
+    Property ID: 37, Value: 0
+    Property ID: 38, Value: 0
+    Property ID: 39, Value: 0
+    Property ID: 40, Value: 0
+    Property ID: 41, Value: 0
+    Property ID: 42, Value: 0
+    Property ID: 43, Value: 0
+    Property ID: 44, Value: 0
+    Property ID: 45, Value: 0
+    Property ID: 46, Value: 0
+    Property ID: 47, Value: 0
+    Property ID: 48, Value: 0
+    Property ID: 49, Value: 0
+    Property ID: 50, Value: 0
+    Property ID: 51, Value: 0
+    Property ID: 52, Value: 0
+    Property ID: 53, Value: 0
+    Property ID: 54, Value: 0
+    Property ID: 55, Value: 0
+    Property ID: 56, Value: 0
+    Property ID: 57, Value: 0
+    Property ID: 58, Value: 0
+    Property ID: 59, Value: 0
+    Property ID: 60, Value: 0
+    Property ID: 61, Value: 0
+    Property ID: 62, Value: 0
+    Property ID: 63, Value: 0
+    Property ID: 64, Value: 0
+    Property ID: 65, Value: 0
+    Property ID: 66, Value: 0
+    Property ID: 67, Value: 0
+    Property ID: 68, Value: 0
+    Property ID: 69, Value: 0
+
