@@ -1,3 +1,6 @@
+# 编译
+gcc src/*.c -o main.exe
+
 # 游玩
 1.运行src/main.exe开始游戏，开始游戏后设置初始资金、选择参加游戏的玩家
 
@@ -12,7 +15,6 @@
 ![image](https://github.com/user-attachments/assets/d9c94ef6-740f-4998-acf9-439fdf3f99b0)
 ![image](https://github.com/user-attachments/assets/71a4ce2f-e9e8-4be8-9c0d-0d2db8e656b8)
 ![image](https://github.com/user-attachments/assets/fd480914-a344-4f18-be57-909f9a1158c6)
-
 
 # 测试
 1.测试用例在src/目录下除了.vscode的所有文件夹中
